@@ -13,22 +13,20 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 60%;
     grid-area: h;
 }
 
 .logo {
-    
     cursor: pointer;
     padding-left: 1.2em;
-
-
+    border-radius: 5px;
 }
 
 .logo:hover{
-
     opacity: 0.9;
     transition: linear 0.3s all;
-
+    background-color: grey;
 }
 
 .opcao{
@@ -41,13 +39,10 @@ header {
 }
 
 #txtBusca{
-
     margin-right: 1.2em;
     outline: none;
     border: 3px solid;
     border-radius: 5px 0 0 5px;
-    
-    
 }
 
 main {
