@@ -2,79 +2,165 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgb(131, 141, 228);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/*Começo header*/
 
 header {
-    background: yellow;
+    background: rgb(235, 235, 235);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 40%;
+    height: 100%;
     grid-area: h;
 }
 
 .logo {
     cursor: pointer;
-    border-radius: 10rem;
     height: 60px;
     margin-left: 1.2rem;
 }
 
 .logo:hover{
     opacity: 0.9;
-    transition: linear 0.3s;
-    border: 2px solid black;
+    transition: 0.3s;
 }
 
 .opcao{
 
     padding-right: 1.2em;
     text-decoration: none;
+    color: rgb(120, 48, 138);
     font-size: 1.2em;
     font-family: "Arial";
     
 }
 
+.opcao:hover{
+
+    text-decoration: underline;
+
+}
+
+
 #txtBusca{
-    background-color: rgba(143, 143, 143, 0.5);
+    background-color: rgba(236, 224, 224, 0.5);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-right: 1.2em;
     outline: none;
-    border: 1px solid;
+    border: 1px rgb(120, 48, 138) solid;
     border-radius: 5px;
     transition: 0.4s;
 }
 
 #txtBusca:hover {
-    background-color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+/*Começo header*/
+
+/*Começo Main / Posts*/
+
 main {
-    background: rgb(0, 132, 255);
+    background: rgb(236, 236, 236);
     width: 100%;
     grid-area: m;
 }
 
+.post{
+
+    display: flex;
+    flex-direction: column;
+    height: 548px;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.oferta_emprego{
+
+    width: 92%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: rgb(247, 240, 177);
+    word-break: break-word;
+
+}
+
+/*Fim do Main / Posts*/
+
+/*Começo aside*/
+
 aside {
-    background: rgb(26, 175, 88);
+    background: rgb(235, 235, 235);
     width: 100%;
     grid-area: a;
 }
 
+.aside_container{
+
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.emprego{
+
+    background-color: rgb(235, 235, 235);
+    border: 1px rgb(120, 48, 138) solid;
+    text-align: center;
+    width: 250px;
+    margin: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.emprego > a {
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.emprego > a:hover {
+    
+    font-size: 1.2rem;
+
+}
+
+
+/*Fim aside*/
+
+/*Começo do footer*/
+
 footer {
-    background: rgb(255, 0, 234);
+    background: rgb(90, 3, 124);
+    color: white;
     width: 100%;
     grid-area: f;
 }
 
+footer > h3{
+
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+/*Fim do footer*/
+
+/*Container global :P*/
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 25vh 75vh 13vh;
+    grid-template-columns: 3fr 1fr ;
+    grid-template-rows: 10vh 80vh 10vh ;
     grid-template-areas: "h h" "m a" "f f";
 }
