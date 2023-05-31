@@ -109,26 +109,8 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-content: space-evenly;
 
-}
-
-.emprego{
-
-    background-color: rgb(235, 235, 235);
-    border: 1px rgb(120, 48, 138) solid;
-    text-align: center;
-    width: 250px;
-    margin: 5px;
-    padding-right: 5px;
-    border-radius: 8px;
-    font-size: 1.1rem;
-}
-
-.emprego:hover {
-
-    cursor: pointer;
-    background-color: rgb(120, 48, 138);
-    
 }
 
 .emprego > a {
@@ -138,13 +120,36 @@ aside {
 
 }
 
-.emprego > a:hover {
-    
-    cursor: pointer;
-    font-size: 1.2rem;
-    backgroung-color: rgb(120, 48, 138);
+.emprego{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: rgb(235, 235, 235);
+    border: 1px rgb(120, 48, 138) solid;
+    text-align: center;
+    width: 250px;
+    height: 80px;
+    border-radius: 8px;
+    font-size: 1.1rem;
 }
+
+.emprego:hover{
+
+    cursor: pointer;
+    color: rgb(235, 235, 235);
+    background-color: rgb(120, 48, 138);
+    font-size: 1.2rem;
+    
+    
+}
+
+.emprego:hover{
+	color: rgb(235, 235, 235);
+}
+
 
 
 /*Fim aside*/
