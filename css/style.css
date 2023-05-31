@@ -133,7 +133,8 @@ aside {
 .emprego > a:hover {
     
     font-size: 1.2rem;
-
+    backgroung-color: rgb(120, 48, 138);
+    color: rgb(235, 235, 235);
 }
 
 
